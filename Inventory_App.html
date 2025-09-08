@@ -1,0 +1,22 @@
+<div>
+  <h2>在庫管理フォーム</h2>
+  <form>
+    <div>
+      <label for="itemName">商品名:</label>
+      <input id="itemName" [(ngModel)]="itemName" name="itemName" required>
+    </div>
+    <div>
+      <label for="itemNumber">数量:</label>
+      <input id="itemNumber" type="number" [(ngModel)]="itemNumber" name="itemNumber" required>
+    </div>
+    <div>
+      <label for="id">ID（更新・削除用）:</label>
+      <input id="id" type="number" [(ngModel)]="id" name="id">
+    </div>
+    <div style="margin-top:10px;">
+      <button type="button" (click)="create()">作成</button>
+      <button type="button" (click)="update()">更新</button>
+      <button type="button" (click)="delete()">削除</button>
+    </div>
+  </form>
+</div>
